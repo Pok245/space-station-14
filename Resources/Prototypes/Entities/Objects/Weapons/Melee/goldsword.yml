@@ -1,0 +1,23 @@
+- type: entity
+  name: Golder
+  parent: BaseItem
+  id: goldsword
+  description: Aaa.
+  components:
+  - type: Sharp
+  - type: Tag
+    tags:
+    - goldsword
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/goldsword.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 99
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: 15
+    sprite: Objects/Weapons/Melee/goldsword.rsi
+  - type: DisarmMalus
